@@ -73,9 +73,3 @@ mge-scan --gbff genome.gbff \
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-source-type 
-target-list -> source-list
-operons-folder -> source-folder
-plot-dir 
