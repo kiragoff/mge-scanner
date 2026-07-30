@@ -1,0 +1,15 @@
+# Python / Build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.tox/
+
+# Local results and test outputs
+git-ignore/
+*.gbff
+*.txt
+*.tsv
+*.csv

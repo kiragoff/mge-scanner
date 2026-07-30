@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mge-scanner"
+version = "0.2.0"
+description = "Screens genomic neighborhoods around target operons for HGT and MGE indicators with GC profile plotting."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pandas>=1.3.0",
+    "biopython>=1.78",
+    "matplotlib>=3.3.0",
+    "numpy>=1.19.0",
+    "openpyxl>=3.0.0"
+]
+authors = [
+    { name = "Your Name" }
+]
+
+[project.scripts]
+mge-scan = "mge_scanner.cli:main"
