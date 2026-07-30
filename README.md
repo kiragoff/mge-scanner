@@ -20,8 +20,8 @@
 Clone the repository and install the package locally in editable mode using `pip`:
 
 ```bash
-git clone [https://github.com/your-username/mge_scanner.git
-cd mge_scanner
+git clone https://github.com/kiragoff/mge-scanner.git
+cd mge-scanner
 pip install -e .
 ```
 
