@@ -46,8 +46,8 @@ mge-scan --gbff genome.gbff \
 | `--csv` | Path to CSV mapping file (required if using `operon` mode). | None |
 | `--source-type` | Target input source: `file` or `folder`. | `file` |
 | `--source-list` | Path to a text file containing target locus tags or operons. Required for 'file' mode. | None |
-| `--source-folder` | Path to a folder with files containing target names. Requireed for 'folder' mode.  | None |
-| `--file-pattern` | Patterns for file names around targets. | `*.0.faa` |
+| `--source-folder` | Path to a folder with files containing target names. Required for 'folder' mode.  | None |
+| `--file-pattern` | Patterns for file names that include targets. | `*.0.faa`  (e.g. operon_278.0.faa) |
 | `--out-dir` | Directory where all reports and plots will be saved. | `.mge_results/` |
 | `--plot-dir` | Directory in out-dir where all plots will be saved. | `.meg_results/neighbourhood_plots` |
 | `--out-zscore` | Save path for global GC abnormalies file. | `.mge_results/gc_anomolies.txt` |
@@ -57,8 +57,7 @@ mge-scan --gbff genome.gbff \
 | `--max-genes` | Maximum number of genes up and downstream to scan for annotations. | `15` |
 | `--max-bp` | Maximum number of basepairs up and downstream to scan for annotations. | `1500` |
 | `--scan-mode` | Neighborhood search strategy (`a`, `b`, or `c`). | `a` |
-| `--flank-bp` | Flanking region size in base pairs to scan for GC anomalies. | `1000` |
-
+| `--flank-bp` | Flanking region size (base pairs) to scan for GC anomalies. | `1000` |
 
 
 
@@ -70,6 +69,6 @@ mge-scan --gbff genome.gbff \
 * **gc_anomalies.txt:** All GC abnormalies across all amplicons from your gbff/gbk
 * **neigourhood_plots:** A folder containing GC plots for your target and flanking region
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
