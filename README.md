@@ -72,3 +72,44 @@ mge-scan --gbff genome.gbff \
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Gallery
+
+### 1. GC Profile
+*Plots target operons and the potential horizontal gene transfer neighbourhoods againt local GC%.*
+![GC Figure Example](figures/operon_250_gc_neighborhood.png)
+
+### 2. Formatted Hits File
+*Example output from the formatted hits file, showing target operons, hgt indicators in your search window, and localized Z-score anomalies for GC ratios.*
+
+```plaintext
+===================================================================================================================
+DETAILED HGT HIT LIST - SEPARATED BY TARGET OPERON
+===================================================================================================================
+
+Target Operon: 250
+-------------------------------------------------------------------------------------------------------------------
+STREAM       | OPERON   | GENE            | BP RANGE               | PRODUCT                                         
+-------------------------------------------------------------------------------------------------------------------
+target       | 250      | PBUTOS_00513    | 519,114 - 520,167      | desA Fatty acid desaturase                      
+target       | 250      | PBUTOS_00514    | 520,261 - 521,383      | comP histidine kinase                           
+target       | 250      | PBUTOS_00515    | 521,395 - 522,004      | citB Response regulator transcription factor    
+downstream   | 251      | PBUTOS_00516    | 522,149 - 522,671      | msrA peptide-methionine (S)-S-oxide reductase MsrA
+downstream   | 252      | PBUTOS_00517    | 522,726 - 523,512      | PBUTOS_00517 IS3 family transposase             
+downstream   | 252      | PBUTOS_00518    | 523,565 - 524,075      | PBUTOS_00518 transposase                        
+
+Target Operon: 1892
+-------------------------------------------------------------------------------------------------------------------
+STREAM       | OPERON   | GENE            | BP RANGE               | PRODUCT                                         
+-------------------------------------------------------------------------------------------------------------------
+target       | 1892     | PBUTOS_03071    | 3,038,642 - 3,039,581  | glaH glutarate dioxygenase GlaH                 
+flank        | NA       | Flank Region    | 3,039,692 - 3,039,942  | Local Flank Anomaly (Merged 1, Avg Z=-2.00, Avg GC=27.2%)
+downstream   | 1893     | PBUTOS_03072    | 3,039,912 - 3,040,254  | PBUTOS_03072 DUF3870 domain-containing protein  
+downstream   | 1893     | PBUTOS_03073    | 3,040,280 - 3,041,498  | lhgO L-2-hydroxyglutarate oxidase               
+downstream   | 1893     | PBUTOS_03074    | 3,041,517 - 3,042,177  | gntR HTH gntR-type domain-containing protein    
+flank        | NA       | Flank Region    | 3,042,092 - 3,042,592  | Local Flank Anomaly (Merged 2, Avg Z=-2.04, Avg GC=27.0%)
+downstream   | 1894     | PBUTOS_03075    | 3,042,611 - 3,043,007  | ydeE AraC family transcriptional regulator      
+flank        | NA       | Flank Region    | 3,043,092 - 3,043,592  | Local Flank Anomaly (Merged 2, Avg Z=-2.38, Avg GC=25.2%)
+downstream   | 1895     | PBUTOS_03076    | 3,043,541 - 3,044,114  | xerD Integrase family protein                   
+flank        | NA       | Flank Region    | 3,044,242 - 3,044,492  | Local Flank Anomaly (Merged 1, Avg Z=-2.60, Avg GC=24.0%)
+```
