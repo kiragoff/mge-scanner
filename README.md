@@ -76,7 +76,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 # Gallery
 
 ### 1. GC Profile
-*Plots target operons and the potential horizontal gene transfer neighbourhoods againt local GC%.*
+*Plots target operons and the potential horizontal gene transfer neighbourhoods against local GC%.*
 ![GC Figure Example](figures/operon_250_gc_neighborhood.png)
 
 ### 2. Formatted Hits File
