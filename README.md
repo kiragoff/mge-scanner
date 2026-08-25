@@ -50,13 +50,13 @@ mge-scan --gbff genome.gbff \
 | `--file-pattern` | Patterns for file names that include targets. | `*.0.faa`  (e.g. operon_278.0.faa) |
 | `--out-dir` | Directory where all reports and plots will be saved. | `.mge_results/` |
 | `--plot-dir` | Directory in out-dir where all plots will be saved. | `.meg_results/neighbourhood_plots` |
-| `--out-zscore` | Save path for global GC abnormalies file. | `.mge_results/gc_anomolies.txt` |
+| `--out-zscore` | Save path for global GC anomalies file. | `.mge_results/gc_anomalies.txt` |
 | `--z-threshold` | Z-score threshold for local GC anomaly detection. | `-2.0` |
 | `--z-window-size` | Window size in bp for chromosomal Z-score scan. | `250` |
 | `--z-step-size` | Step size in bp for chromosomal Z-score scan. | `50` |
 | `--max-genes` | Maximum number of genes up and downstream to scan for annotations. | `15` |
 | `--max-bp` | Maximum number of basepairs up and downstream to scan for annotations. | `1500` |
-| `--scan-mode` | Neighborhood search strategy (`a`, `b`, or `c`). | `a` |
+| `--scan-mode` | Neighbourhood search strategy (`a`, `b`, or `c`). | `a` |
 | `--flank-bp` | Flanking region size (base pairs) to scan for GC anomalies. | `1000` |
 
 
@@ -66,8 +66,8 @@ mge-scan --gbff genome.gbff \
 * **formatted_hits.txt:** A structured, easy-to-read text report organized by target gene/operon. (Often the most useful file for interpretation.)
 * **detailed_report.txt:** Line-by-line detailed log of all detected HGT features and GC anomalies.
 * **summary_report.tsv:** A machine-readable summary table of all targets and their flagged indicators.
-* **gc_anomalies.txt:** All GC abnormalies across all amplicons from your gbff/gbk
-* **neigourhood_plots:** A folder containing GC plots for your target and flanking region
+* **gc_anomalies.txt:** All GC anomalies across all amplicons from your gbff/gbk
+* **neighbourhood_plots:** A folder containing GC plots for your target and flanking region
 
 ## License
 
