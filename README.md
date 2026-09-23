@@ -2,6 +2,8 @@
 
 `mge-scanner` is a command-line tool designed to screen genomic neighborhoods around target genes or operons for Horizontal Gene Transfer (HGT) indicators, Mobile Genetic Element (MGE) markers, and local GC content anomalies. It automatically generates detailed text reports, summary tables, and publication-ready GC profile plots.
 
+![GC Figure Example](figures/operon_250_gc_neighborhood.png)
+
 ---
 
 ## Features
